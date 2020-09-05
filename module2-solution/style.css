@@ -1,0 +1,159 @@
+* {
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#heading h1{
+	text-align: center;
+	margin: 30px auto 20px;
+	font-size: 24px;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+#main {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#main div {
+	float: left;
+	margin: 0 0 10px 2.5%;
+	border: 1px solid black;
+	width: 30%;
+	height: 130px;
+	overflow: hidden;
+}
+.left {
+	position: relative;
+	/* margin-top: 20px; */
+}
+.middle {
+	position: relative;
+	/* margin-top: 20px; */
+}
+.right {
+	position: relative;
+	/*overflow: hidden;*/
+	/* margin-top: 20px; */
+}
+.left h2 {
+	text-align: center;
+	font-size:18px;
+	line-height: 40px;
+	text-align: center;
+	/*why when i use line-height=height, the text couldn' be center*/
+	font-family: sans-serif;
+	font-weight: 700;
+	background-color: pink;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 40px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+
+}
+.left p {
+	font-size: 12px;
+	font-family: sans-serif;
+	position: absolute;
+	bottom: 20px;
+	top:50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.middle h2 {
+	text-align: center;
+	font-size:18px;
+	line-height: 40px;
+	font-family: sans-serif;
+	font-weight: 700;
+	background-color: lightblue;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 40px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.middle p {
+	font-size: 12px;
+	font-family: sans-serif;
+	position: absolute;
+	bottom: 20px;
+	top:50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.right h2 {
+	text-align: center;
+	font-size:18px;
+	line-height: 40px;
+	font-family: sans-serif;
+	font-weight: 700;
+	background-color: lightyellow;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 40px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+
+}
+.right p {
+	font-size: 12px;
+	font-family: sans-serif;
+	position: absolute;
+	bottom: 20px;
+	top:50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+@media (max-width: 992px) {
+	#main div {
+		width:45%;
+		margin-left: 3.5%;
+	}
+	#main .right {
+		width:93.5%;
+	}
+}
+
+/*Medium devices only */
+@media (min-width: 991px) and (max-width: 768px) {
+  #main div {
+		width:45%;
+		margin-left: 3.5%;
+	}
+	#main .right {
+		width:93.5%;
+  
+}
+}
+
+@media (min-width: 1px) and (max-width: 764px){
+  #main div {
+		width:56%;
+		margin-left: 22%;
+	}
+	#main .middle {
+		width:56%;
+		margin-left: 22%;
+	}
+	#main .right {
+		width:56%;
+		margin-left: 22%;
+  
+}
+}
+
+
+
+
